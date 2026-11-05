@@ -1,0 +1,32 @@
+{
+ "nonlinear_scale": 1.1339335018560177,
+ "oracle_auc": {
+  "linear": 0.7782516313518826,
+  "nonlinear": 0.7782624491529272,
+  "null": 0.5
+ },
+ "true_importance": {
+  "linear": {
+   "Benefit": 0.1085,
+   "Cost": 0.0822,
+   "Compat": 0.255,
+   "Complex": 0.0151,
+   "Trial": 0.2693,
+   "Innov": 0.3113,
+   "TechExp": 0.2807,
+   "CompPress": 0.205,
+   "TopMgt": 0.8182
+  },
+  "nonlinear": {
+   "Benefit": 0.0,
+   "Cost": 0.0,
+   "Compat": 0.2891,
+   "Complex": 0.0,
+   "Trial": 0.2587,
+   "Innov": 0.353,
+   "TechExp": 0.6344,
+   "CompPress": 0.1936,
+   "TopMgt": 0.8387
+  }
+ }
+}

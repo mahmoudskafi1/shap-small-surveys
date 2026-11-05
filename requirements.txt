@@ -1,0 +1,12 @@
+# Versions reported in the paper (Section 4.3); Python 3.13
+scikit-learn==1.9.1
+xgboost==3.4.1
+shap==0.54.1
+numpy==2.5.3
+scipy==1.18.1
+# Other packages used by the scripts
+pandas
+joblib
+matplotlib
+statsmodels   # real_data/audit_2019.py only
+pyreadstat    # real_data/audit_2019.py only (reads the confidential SPSS files)
