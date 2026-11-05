@@ -47,6 +47,7 @@ LABEL = {"CCbenefitSc": "Relative advantage", "CosteffectSC": "Cost", "CmptbltSC
 def specs(seed):
     return {
         "Majority": (DummyClassifier(strategy="most_frequent"), None),
+        "Prior": (DummyClassifier(strategy="prior"), None),  # predicts the training-fold adoption rate (v1.0.1)
         "LR": (Pipeline([("sc", StandardScaler()), ("m", LogisticRegression(max_iter=5000))]),
                {"m__C": [0.01, 0.1, 1.0, 10.0]}),
         "RF": (RandomForestClassifier(n_estimators=300, random_state=seed, n_jobs=1),

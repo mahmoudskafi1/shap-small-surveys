@@ -18,6 +18,14 @@
    "brier_mean": 0.36,
    "brier_std": 0.005
   },
+  "Prior": {
+   "auc_mean": 0.5,
+   "auc_std": 0.0,
+   "bal_acc_mean": 0.5,
+   "bal_acc_std": 0.0,
+   "brier_mean": 0.23,
+   "brier_std": 0.002
+  },
   "RF": {
    "auc_mean": 0.714,
    "auc_std": 0.11,
