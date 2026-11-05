@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite it as below."
 title: "Code and synthetic data for: When Does Explainable Machine Learning Add Value to Small Technology-Adoption Surveys? A Reanalysis and Calibrated Simulation"
-version: 1.0.0
+version: 1.0.1
 license: MIT
 authors:
   - family-names: Skafi

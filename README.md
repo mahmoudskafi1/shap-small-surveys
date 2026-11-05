@@ -75,6 +75,11 @@ python real_data/audit_2019.py PATH_TO_SPSS_FILES audit_out
 python real_data/real_analysis.py audit_out/survey2019_analysis.csv real_out
 ```
 
+## Version history
+
+- **v1.0.1**: adds a prevalence baseline (`DummyClassifier(strategy="prior")`, which predicts the training-fold adoption rate) next to the majority-class baseline in `real_data/real_analysis.py`. It gives Brier 0.230 (SD 0.002) against 0.360 (SD 0.005) for the majority-class baseline (Table 2). All other results are unchanged.
+- **v1.0.0**: version first submitted to *Information Systems Frontiers*.
+
 ## Note on reading `sim_raw.csv`
 
 One scenario is called `null`. pandas reads the text "null" as a missing value by default, so read the file with
