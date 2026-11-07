@@ -30,7 +30,15 @@ training cases), in the same way as logistic regression and the true importance.
 The bootstrap agreement reported in the paper is `tau_all200`, the mean Kendall τ over all
 pairs of the 200 refits.
 
-## 2. Correlation between constructs (Table 6)
+## 2. Organisation-aware analyses (Section 5.1)
+
+`grouped_cv.py DATA` keeps the respondents of each organisation together: stratified grouped
+folds in the outer and inner loops of the nested cross-validation, in the permutation test and
+in the fold-stability computation, and a bootstrap that resamples organisations. Respondents
+with a blank employer field are treated as separate organisations. Output:
+`results/real_grouped_cv.json` (aggregate statistics only).
+
+## 3. Correlation between constructs (Table 6)
 
 | Script | Purpose |
 |---|---|
