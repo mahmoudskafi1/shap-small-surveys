@@ -1,0 +1,17 @@
+{
+ "fold_stability": {
+  "LR": 0.377,
+  "RF": 0.628,
+  "XGB": 0.621
+ },
+ "fold_stability_sd": {
+  "LR": 0.078,
+  "RF": 0.072,
+  "XGB": 0.074
+ },
+ "simulation_protocol_auc": {
+  "LR": 0.685,
+  "RF": 0.72,
+  "XGB": 0.724
+ }
+}

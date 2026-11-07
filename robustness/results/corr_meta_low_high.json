@@ -1,0 +1,74 @@
+{
+ "low": {
+  "mean_abs_r": 0.0,
+  "max_r": 0.0,
+  "min_eig": 1.0,
+  "linear_scale": 0.9722880505833018,
+  "nl_scale": 0.9902368712399494,
+  "target_auc": 0.7782516313518826,
+  "oracle_auc": {
+   "linear": 0.7782384438784944,
+   "nonlinear": 0.7782516292610712
+  },
+  "true_importance": {
+   "linear": {
+    "Benefit": 0.1085,
+    "Cost": 0.0822,
+    "Compat": 0.2548,
+    "Complex": 0.0151,
+    "Trial": 0.2688,
+    "Innov": 0.3113,
+    "TechExp": 0.28,
+    "CompPress": 0.2048,
+    "TopMgt": 0.8161
+   },
+   "nonlinear": {
+    "Benefit": 0.0,
+    "Cost": 0.0,
+    "Compat": 0.2523,
+    "Complex": 0.0,
+    "Trial": 0.1888,
+    "Innov": 0.3082,
+    "TechExp": 0.5397,
+    "CompPress": 0.1689,
+    "TopMgt": 0.7303
+   }
+  }
+ },
+ "high": {
+  "mean_abs_r": 0.4146666666666667,
+  "max_r": 0.6325000000000001,
+  "min_eig": 0.30997883805691767,
+  "linear_scale": 1.0508078089878836,
+  "nl_scale": 1.1219637496011725,
+  "target_auc": 0.7782516313518826,
+  "oracle_auc": {
+   "linear": 0.778257035418561,
+   "nonlinear": 0.7782537976285809
+  },
+  "true_importance": {
+   "linear": {
+    "Benefit": 0.1085,
+    "Cost": 0.0822,
+    "Compat": 0.2549,
+    "Complex": 0.0151,
+    "Trial": 0.2695,
+    "Innov": 0.3112,
+    "TechExp": 0.2805,
+    "CompPress": 0.205,
+    "TopMgt": 0.8178
+   },
+   "nonlinear": {
+    "Benefit": 0.0,
+    "Cost": 0.0,
+    "Compat": 0.286,
+    "Complex": 0.0,
+    "Trial": 0.2616,
+    "Innov": 0.3491,
+    "TechExp": 0.6304,
+    "CompPress": 0.1914,
+    "TopMgt": 0.8299
+   }
+  }
+ }
+}

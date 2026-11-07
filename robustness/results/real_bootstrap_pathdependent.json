@@ -1,0 +1,150 @@
+{
+ "LR": {
+  "median_rank": {
+   "Relative advantage": 6.0,
+   "Cost": 6.0,
+   "Compatibility": 5.0,
+   "Complexity": 7.0,
+   "Trialability": 5.0,
+   "Innovativeness": 4.0,
+   "Technological experience": 4.0,
+   "Competitive pressure": 6.0,
+   "Top management support": 1.0
+  },
+  "rank_IQR": {
+   "Relative advantage": 3.0,
+   "Cost": 3.25,
+   "Compatibility": 5.0,
+   "Complexity": 3.0,
+   "Trialability": 4.0,
+   "Innovativeness": 4.0,
+   "Technological experience": 3.25,
+   "Competitive pressure": 4.0,
+   "Top management support": 0.0
+  },
+  "share_ranked_first": {
+   "Relative advantage": 0.0,
+   "Cost": 0.005,
+   "Compatibility": 0.005,
+   "Complexity": 0.0,
+   "Trialability": 0.04,
+   "Innovativeness": 0.02,
+   "Technological experience": 0.05,
+   "Competitive pressure": 0.005,
+   "Top management support": 0.875
+  },
+  "share_in_top3": {
+   "Relative advantage": 0.135,
+   "Cost": 0.14,
+   "Compatibility": 0.28,
+   "Complexity": 0.07,
+   "Trialability": 0.39,
+   "Innovativeness": 0.385,
+   "Technological experience": 0.41,
+   "Competitive pressure": 0.195,
+   "Top management support": 0.995
+  },
+  "mean_pairwise_kendall_tau_between_bootstraps": 0.2456371625863151,
+  "tau_all200": 0.2520519262981575
+ },
+ "RF": {
+  "median_rank": {
+   "Relative advantage": 8.0,
+   "Cost": 5.0,
+   "Compatibility": 7.0,
+   "Complexity": 7.0,
+   "Trialability": 2.0,
+   "Innovativeness": 5.0,
+   "Technological experience": 4.0,
+   "Competitive pressure": 5.0,
+   "Top management support": 1.0
+  },
+  "rank_IQR": {
+   "Relative advantage": 3.0,
+   "Cost": 3.0,
+   "Compatibility": 2.0,
+   "Complexity": 3.0,
+   "Trialability": 2.0,
+   "Innovativeness": 4.0,
+   "Technological experience": 2.0,
+   "Competitive pressure": 2.25,
+   "Top management support": 0.0
+  },
+  "share_ranked_first": {
+   "Relative advantage": 0.0,
+   "Cost": 0.0,
+   "Compatibility": 0.0,
+   "Complexity": 0.0,
+   "Trialability": 0.105,
+   "Innovativeness": 0.005,
+   "Technological experience": 0.01,
+   "Competitive pressure": 0.0,
+   "Top management support": 0.88
+  },
+  "share_in_top3": {
+   "Relative advantage": 0.03,
+   "Cost": 0.205,
+   "Compatibility": 0.055,
+   "Complexity": 0.09,
+   "Trialability": 0.715,
+   "Innovativeness": 0.29,
+   "Technological experience": 0.405,
+   "Competitive pressure": 0.215,
+   "Top management support": 0.995
+  },
+  "mean_pairwise_kendall_tau_between_bootstraps": 0.41632140615191465,
+  "tau_all200": 0.4055499720826353
+ },
+ "XGB": {
+  "median_rank": {
+   "Relative advantage": 8.0,
+   "Cost": 5.0,
+   "Compatibility": 7.0,
+   "Complexity": 7.0,
+   "Trialability": 3.0,
+   "Innovativeness": 4.0,
+   "Technological experience": 4.0,
+   "Competitive pressure": 6.0,
+   "Top management support": 1.0
+  },
+  "rank_IQR": {
+   "Relative advantage": 3.0,
+   "Cost": 4.0,
+   "Compatibility": 3.0,
+   "Complexity": 3.0,
+   "Trialability": 2.0,
+   "Innovativeness": 2.0,
+   "Technological experience": 3.0,
+   "Competitive pressure": 3.0,
+   "Top management support": 0.0
+  },
+  "share_ranked_first": {
+   "Relative advantage": 0.0,
+   "Cost": 0.005,
+   "Compatibility": 0.0,
+   "Complexity": 0.0,
+   "Trialability": 0.09,
+   "Innovativeness": 0.01,
+   "Technological experience": 0.005,
+   "Competitive pressure": 0.0,
+   "Top management support": 0.89
+  },
+  "share_in_top3": {
+   "Relative advantage": 0.04,
+   "Cost": 0.27,
+   "Compatibility": 0.045,
+   "Complexity": 0.095,
+   "Trialability": 0.66,
+   "Innovativeness": 0.43,
+   "Technological experience": 0.355,
+   "Competitive pressure": 0.11,
+   "Top management support": 0.995
+  },
+  "mean_pairwise_kendall_tau_between_bootstraps": 0.4611111581325531,
+  "tau_all200": 0.39686208963394165
+ },
+ "kendall_tau_SHAP_vs_LR": {
+  "RF": 0.44472222222222213,
+  "XGB": 0.4675
+ }
+}
