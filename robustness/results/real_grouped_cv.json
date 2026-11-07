@@ -1,0 +1,168 @@
+{
+ "n": 139,
+ "n_groups": 112,
+ "largest_group": 18,
+ "nested_cv": {
+  "LR": {
+   "auc_mean": 0.68,
+   "auc_std": 0.098,
+   "bal_acc_mean": 0.56,
+   "bal_acc_std": 0.077,
+   "brier_mean": 0.217,
+   "brier_std": 0.026
+  },
+  "Majority": {
+   "auc_mean": 0.5,
+   "auc_std": 0.0,
+   "bal_acc_mean": 0.5,
+   "bal_acc_std": 0.0,
+   "brier_mean": 0.36,
+   "brier_std": 0.013
+  },
+  "Prior": {
+   "auc_mean": 0.5,
+   "auc_std": 0.0,
+   "bal_acc_mean": 0.5,
+   "bal_acc_std": 0.0,
+   "brier_mean": 0.231,
+   "brier_std": 0.004
+  },
+  "RF": {
+   "auc_mean": 0.722,
+   "auc_std": 0.079,
+   "bal_acc_mean": 0.615,
+   "bal_acc_std": 0.063,
+   "brier_mean": 0.202,
+   "brier_std": 0.017
+  },
+  "XGB": {
+   "auc_mean": 0.715,
+   "auc_std": 0.079,
+   "bal_acc_mean": 0.64,
+   "bal_acc_std": 0.077,
+   "brier_mean": 0.208,
+   "brier_std": 0.036
+  }
+ },
+ "test_fold_size": {
+  "min": 27,
+  "max": 29
+ },
+ "ml_minus_lr_auc": {
+  "RF": {
+   "mean_diff": 0.042,
+   "t": 1.35,
+   "p": 0.183,
+   "ci95": [
+    -0.02,
+    0.104
+   ]
+  },
+  "XGB": {
+   "mean_diff": 0.035,
+   "t": 0.98,
+   "p": 0.331,
+   "ci95": [
+    -0.037,
+    0.107
+   ]
+  }
+ },
+ "permutation_test_LR": {
+  "cv_auc": 0.688,
+  "p": 0.001996007984031936,
+  "null_auc_95pct": 0.609
+ },
+ "fold_stability": {
+  "LR": 0.396,
+  "RF": 0.639,
+  "XGB": 0.588
+ },
+ "fold_protocol_auc": {
+  "LR": 0.68,
+  "RF": 0.711,
+  "XGB": 0.715
+ },
+ "org_bootstrap": {
+  "refits": 200,
+  "n_range": [
+   114,
+   183
+  ],
+  "LR": {
+   "share_first": {
+    "Relative advantage": 0.02,
+    "Cost": 0.01,
+    "Compatibility": 0.01,
+    "Complexity": 0.0,
+    "Trialability": 0.055,
+    "Innovativeness": 0.06,
+    "Technological experience": 0.055,
+    "Competitive pressure": 0.005,
+    "Top management support": 0.785
+   },
+   "share_top3": {
+    "Relative advantage": 0.175,
+    "Cost": 0.14,
+    "Compatibility": 0.35,
+    "Complexity": 0.035,
+    "Trialability": 0.395,
+    "Innovativeness": 0.335,
+    "Technological experience": 0.44,
+    "Competitive pressure": 0.175,
+    "Top management support": 0.955
+   },
+   "tau_all": 0.248
+  },
+  "RF": {
+   "share_first": {
+    "Relative advantage": 0.005,
+    "Cost": 0.02,
+    "Compatibility": 0.01,
+    "Complexity": 0.0,
+    "Trialability": 0.11,
+    "Innovativeness": 0.015,
+    "Technological experience": 0.015,
+    "Competitive pressure": 0.005,
+    "Top management support": 0.82
+   },
+   "share_top3": {
+    "Relative advantage": 0.055,
+    "Cost": 0.2,
+    "Compatibility": 0.095,
+    "Complexity": 0.015,
+    "Trialability": 0.76,
+    "Innovativeness": 0.245,
+    "Technological experience": 0.445,
+    "Competitive pressure": 0.22,
+    "Top management support": 0.965
+   },
+   "tau_all": 0.397
+  },
+  "XGB": {
+   "share_first": {
+    "Relative advantage": 0.005,
+    "Cost": 0.015,
+    "Compatibility": 0.005,
+    "Complexity": 0.0,
+    "Trialability": 0.125,
+    "Innovativeness": 0.03,
+    "Technological experience": 0.005,
+    "Competitive pressure": 0.0,
+    "Top management support": 0.815
+   },
+   "share_top3": {
+    "Relative advantage": 0.055,
+    "Cost": 0.245,
+    "Compatibility": 0.11,
+    "Complexity": 0.02,
+    "Trialability": 0.72,
+    "Innovativeness": 0.46,
+    "Technological experience": 0.32,
+    "Competitive pressure": 0.1,
+    "Top management support": 0.97
+   },
+   "tau_all": 0.386
+  }
+ }
+}
