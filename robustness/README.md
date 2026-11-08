@@ -44,6 +44,22 @@ organisations is repeated. Output: `results/grouped_null.jsonl` (aggregate stati
 `python grouped_null.py --summary` prints the comparison with the observed organisation-level
 bootstrap (Section 5.1).
 
+`restricted_permutation.py` repeats both permutation tests with a restricted (block)
+permutation that keeps the respondents of each organisation together (Winkler et al., 2015):
+the outcomes of whole organisations are exchanged between organisations of the same size, so
+single respondents are shuffled freely, the pairs from the same organisation are exchanged as
+pairs, and the two organisations of unique size (4 and 18 respondents) keep their outcomes.
+These are the organisation-aware results reported in Section 5.1.
+
+| Command | Output in `results/` |
+|---|---|
+| `python restricted_permutation.py auc DATA` | `restricted_auc_test.json` (logistic regression AUC, 500 permutations) |
+| `python restricted_permutation.py boot DATA` | `restricted_null.jsonl` (noise baseline for the organisation-level bootstrap, 100 permutations) |
+| `python restricted_permutation.py --summary` | printed comparison with the observed values |
+
+The results of `grouped_null.py`, which shuffles the outcome across respondents, are kept for
+comparison.
+
 ## 3. Correlation between constructs (Table 6)
 
 | Script | Purpose |
