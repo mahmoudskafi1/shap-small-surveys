@@ -38,6 +38,12 @@ in the fold-stability computation, and a bootstrap that resamples organisations.
 with a blank employer field are treated as separate organisations. Output:
 `results/real_grouped_cv.json` (aggregate statistics only).
 
+`grouped_null.py DATA` computes the organisation-aware noise baseline: for each of the same 100
+permutations of the outcome used for Table 4, the 200-refit bootstrap that resamples
+organisations is repeated. Output: `results/grouped_null.jsonl` (aggregate statistics only).
+`python grouped_null.py --summary` prints the comparison with the observed organisation-level
+bootstrap (Section 5.1).
+
 ## 3. Correlation between constructs (Table 6)
 
 | Script | Purpose |
