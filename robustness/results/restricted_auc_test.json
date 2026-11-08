@@ -1,0 +1,9 @@
+{
+ "scheme": "outcomes exchanged between organisations of equal size",
+ "permutations": 500,
+ "cv_auc": 0.688,
+ "null_auc_mean": 0.498,
+ "null_auc_95pct": 0.61,
+ "null_auc_max": 0.717,
+ "p": 0.003992015968063872
+}
