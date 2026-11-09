@@ -68,6 +68,38 @@ comparison.
 | `run_correlation.py` | Runs the low and high levels (n = 139, 300, 1,000; 100 replications); the moderate level is the main simulation |
 | `summarise_correlation.py` | Writes `results/corr_summary.csv` (Table 6) |
 
+## 4. Tuning check for the simulation (Section 5.2, Limitations)
+
+`run_tuning.py` reruns the nonlinear scenario at n = 139, 300 and 1,000 on the same 100
+synthetic datasets per size as the main simulation (same seeds), but selects the
+hyperparameters of every model by a stratified 5-fold grid search on ROC-AUC inside each
+training fold. The grids contain the fixed values of the main simulation:
+
+| Model | Grid |
+|---|---|
+| Logistic regression | C in {0.01, 0.1, 1, 10} |
+| Random forest (250 trees) | maximum depth in {2, 4, unlimited} x minimum leaf size in {3, 5, 10} |
+| XGBoost (200 trees, learning rate 0.05) | maximum depth in {1, 2, 3} x L2 penalty in {1, 5, 10} |
+
+| Command | Output in `results/` |
+|---|---|
+| `python run_tuning.py results/sim_tuned_nonlinear.csv 6600` | `sim_tuned_nonlinear.csv` (synthetic; one row per dataset, with the hyperparameters selected in every fold) |
+| `python run_tuning.py --summary results/sim_tuned_nonlinear.csv` | `sim_tuned_nonlinear_summary.csv` (tuned and fixed results on the same datasets) and the printed change in the ML gain |
+
+## 5. Checks of the block permutation (Section 4.1, Section 5.1, Limitations)
+
+In `restricted_permutation.py`, the organisations with 4 and 18 respondents have no partner of
+the same size, so their outcomes stay fixed in every permutation. `org_permutation_checks.py`
+checks what this choice does. Like the other real-data scripts, it needs the confidential
+analysis file, which is not in this repository, and it writes aggregate statistics only.
+
+| Command | Output in `results/` |
+|---|---|
+| `python org_permutation_checks.py sub DATA` | `org_sub117.json`: AUC permutation test and organisation-level bootstrap without the two organisations (n = 117), where every organisation can exchange its outcomes |
+| `python org_permutation_checks.py subnull DATA results/org_sub117_null.jsonl 100 6000` | `org_sub117_null.jsonl`: noise baseline for that bootstrap (100 permutations x 200 refits; resumable) |
+| `python org_permutation_checks.py calib DATA results/org_calibration.jsonl 300 6000` | `org_calibration.jsonl`: Type I error of the AUC permutation test on 900 datasets with a simulated outcome that is unrelated to the constructs but correlated within organisations (intra-class correlation 0, 0.2, 0.5); each row holds the p values of the block permutation and of the shuffle across respondents |
+| `python org_permutation_checks.py --summary results` | printed summary, saved as `org_permutation_checks_summary.txt` |
+
 ## Running times
 
 The simulation scripts take several hours on two cores. They can be resumed: pass a time
