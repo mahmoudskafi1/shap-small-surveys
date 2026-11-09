@@ -1,0 +1,43 @@
+{
+ "n": 117,
+ "organisations": 110,
+ "sizes": {
+  "1": 103,
+  "2": 7
+ },
+ "adoption_rate": 0.624,
+ "auc_test": {
+  "permutations": 500,
+  "cv_auc": 0.672,
+  "null_auc_mean": 0.497,
+  "null_auc_95pct": 0.619,
+  "p": 0.007984031936127744
+ },
+ "org_bootstrap": {
+  "refits": 200,
+  "LR": {
+   "max_first": 0.705,
+   "argmax_first": 8,
+   "tm_first": 0.705,
+   "max_top3": 0.905,
+   "tm_top3": 0.905,
+   "tau": 0.24723338916806253
+  },
+  "RF": {
+   "max_first": 0.74,
+   "argmax_first": 8,
+   "tm_first": 0.74,
+   "max_top3": 0.94,
+   "tm_top3": 0.94,
+   "tau": 0.3194723618090452
+  },
+  "XGB": {
+   "max_first": 0.725,
+   "argmax_first": 8,
+   "tm_first": 0.725,
+   "max_top3": 0.94,
+   "tm_top3": 0.94,
+   "tau": 0.38707426018983804
+  }
+ }
+}

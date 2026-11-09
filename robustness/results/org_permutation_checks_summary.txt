@@ -1,0 +1,14 @@
+n = 117: {"permutations": 500, "cv_auc": 0.672, "null_auc_mean": 0.497, "null_auc_95pct": 0.619, "p": 0.007984031936127744}
+bootstrap baseline, K = 100
+first  LR   obs 0.705 null mean 0.380 p95 0.705 p 0.07
+first  RF   obs 0.740 null mean 0.379 p95 0.636 p 0.02
+first  XGB  obs 0.725 null mean 0.388 p95 0.671 p 0.04
+top3   LR   obs 0.905 null mean 0.679 p95 0.925 p 0.08
+top3   RF   obs 0.940 null mean 0.702 p95 0.911 p 0.06
+top3   XGB  obs 0.940 null mean 0.709 p95 0.910 p 0.03
+tau    LR   obs 0.247 null mean 0.125 p95 0.298 p 0.12
+tau    RF   obs 0.319 null mean 0.174 p95 0.316 p 0.05
+tau    XGB  obs 0.387 null mean 0.170 p95 0.314 p 0.01
+ICC 0.0: datasets 300, rejection at 0.05: restricted 0.040 (SE 0.011), across respondents 0.037 (SE 0.011); mean adoption rate 0.64
+ICC 0.2: datasets 300, rejection at 0.05: restricted 0.030 (SE 0.010), across respondents 0.040 (SE 0.011); mean adoption rate 0.64
+ICC 0.5: datasets 300, rejection at 0.05: restricted 0.030 (SE 0.010), across respondents 0.043 (SE 0.012); mean adoption rate 0.64
